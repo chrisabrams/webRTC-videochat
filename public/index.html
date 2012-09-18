@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1"/>
+<link rel="stylesheet" href="/style.css" />
+
+<!-- type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+-->
+</head>
+<body>
+
+<div id="container"> 
+  <div id="card">
+    <div id="local">
+      <video width="100%" height="100%" id="localVideo" autoplay="autoplay"/>
+    </div>
+    <div id="remote">
+      <video width="100%" height="100%" id="remoteVideo" autoplay="autoplay">
+      </video>
+      <div id="mini">
+        <video width="100%" height="100%" id="miniVideo" autoplay="autoplay" />
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+  </div>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/videochat.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>
